@@ -844,6 +844,15 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
+.form-element label{
+margin-top: 12px;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.01em;
+color: var(--third-text-color);
+}
+
 .form-element{
   display:flex;
   flex-direction: column;
@@ -895,8 +904,11 @@ margin-top: 10px;
   background-color:var(--secondary-text-color);
   border:none;
   cursor: pointer;
-  /* transition:color 250ms
-  cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  text-align: center;
+  
+  justify-content: center;
+  transition:color 250ms
+  cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-element input:focus{
@@ -941,3 +953,19 @@ border-radius: 2px;
   translate: 0 -50%;
   top: 50%;
 } */
+
+.form-element:focus + svg{
+fill: var(--secondary-text-color);
+}
+
+.label-contract{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--third-text-color);
+}
+
+.span-inf{
+  color: var(--secondary-text-color);
+}
