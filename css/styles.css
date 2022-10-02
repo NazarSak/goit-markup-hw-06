@@ -969,3 +969,39 @@ color: var(--third-text-color);
 .span-inf{
   color: var(--secondary-text-color);
 }
+
+.con-teleg{
+  margin-left: 76px;
+  width: 570px;
+}
+
+.con-teleg input{
+  background-color: var(--background-text-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  height: 50px;
+  padding-left: 16px;
+  width: 63%;
+}
+
+.con-teleg button{
+background: var(--secondary-text-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+/* margin-left: 12px; */
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--white-text-color);
+height: 50px;
+width: 35%;
+}
+
+.invite-btn:active{
+  content: ;
+  bac
+}
