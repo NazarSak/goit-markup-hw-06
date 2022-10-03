@@ -271,7 +271,14 @@
                         </a> 
                     </li>
                     <li class="social item"><a href=""  class="a-my-second">
-                         
+                        
+                            <svg
+                            viewBox="0 0 100 100" 
+                           width="20"
+                           class="icon shape-codepen "
+                           >
+                           <use xlink:href="./img/sprite.svg#icon-twitter-one"></use>
+                           </svg>  
                     </a></li>
                     <li class="social item"><a href=""  class="a-my-second">
                         <svg
@@ -468,10 +475,24 @@
         </div>
 
 <div class="con-teleg">
-<h2 class="footer-invite">Підпишіться на розсилку</h2>
-<input type="mail" placeholder="E-mail" id="ivite">
-<button type="submit" class="ivite-btn"> Підписатися</button>
+<p class="footer-invite">Підпишіться на розсилку</p>
 
+<form action="">
+<input type="mail" placeholder="E-mail" id="ivite">
+<button type="submit" class="header-btn"> Підписатися 
+    
+    <svg
+                
+               width="20" height="20px"
+               class="icon shape-codepen "
+               >
+               <use xlink:href="./img/sprite-telegram.svg#icon-teleg-send"></use>
+    </svg>  
+
+
+</button>
+
+</form>
 </div>
 
 
@@ -491,12 +512,12 @@
             <use xlink:href="./img/sprite-hrest.svg#icon-hrest"></use>
             </svg>  
     </button>
-    <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+   
 <!-- form -->
 <form action="" class="modal-form">
-
+    <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 <div class="form-element"> 
-        <label for="name">Ім'я</label> 
+        <label for="name" class="label">Ім'я</label> 
     <div class="div-inf">
             <svg  
             ViewBox="0 0 100 100"
@@ -553,19 +574,25 @@
 
 <div class="form-element"> 
     <label for="coment" class="label">Коментар</label> 
-    <input 
-    type="text" 
-    id="coment" 
-    class="input-inf-com"
-    placeholder="Введіть текст">
+    
+    <textarea name="Коментар" id="coment" cols="7" rows="7" class="textarea" placeholder="Введіть текст"></textarea>
 </div>
 
 <div class="contract-element">
 <input type="checkbox" id="btn" name="contract">
-<label for="btn" class="label-contract">Погоджуюся з розсилкою та приймаю  <span > <a href="" class="span-inf">Умови договору</a></span></label>
-</div>
 
-    <button type="submit" class="btn-inf">Відправити</button>
+<svg  class="svg-contract"
+ViewBox="0 0 100 100"
+width="15" height="12px">
+<use xlink:href="./img/sprite-galochka.svg#icon-Vector"></use>
+</svg>
+
+
+<label for="btn" class="label-contract">Погоджуюся з розсилкою та приймаю  <span > <a href="" class="span-inf">Умови договору</a></span></label>
+
+
+
+    <button type="submit" class="just">Відправити</button>
 </form>
 
   </div>
