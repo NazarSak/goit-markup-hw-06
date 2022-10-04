@@ -300,10 +300,17 @@ color: var(--secondary-text-color);
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
   transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   } 
   
+  .special-btn{
+  display: flex;
+  align-items: center;
+}
+
+  .modal-teleg{
+    display: flex;
+  }
   
   /* second-section */
   
@@ -798,8 +805,8 @@ width: 100%;
 }
 
 .modal{
-width: 530px;
-height: 580px;
+width: 528px;
+height: 581px;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -826,6 +833,18 @@ color: var(--only-black-color);
 cursor: pointer;
 right: 8px;
 top: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.svg-hrestik:hover,
+.svg-hrestik:focus{
+  fill: var(--secondary-text-color);
+}
+
+.svg-hrestik{
+  fill: var(--only-black-color);
 }
 
 button{
@@ -841,6 +860,7 @@ letter-spacing: 0.03em;
 
 color: #212121;
 }
+
 
 .form-element label{
 font-weight: 400;
@@ -899,7 +919,9 @@ color: var(--third-text-color);
 border: 1px solid var(--secondary-text-color);
 }
 
-
+.form-element input:focus + svg{
+  fill: var(--secondary-text-color);
+}
 
 .div-inf{
   position: relative;
@@ -916,6 +938,14 @@ border: 1px solid var(--secondary-text-color);
 .contract-element input:focus{
 background-color: var(--secondary-text-color);
 border-radius: 2px;
+}
+
+.contract-element{
+  border: 2px solid var(--only-black-color);
+  width: 16px;
+  height: 15px;
+  border-radius: 3px;
+  background: var(--secondary-text-color);
 }
 
 .contract-element{
@@ -1014,6 +1044,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 outline: none;
 padding: 12px 16px;
+height: 120px;
 }
 
 .form-element .textarea:focus{
@@ -1021,24 +1052,48 @@ padding: 12px 16px;
 }
 
 .svg-contract{
-  transition:fill 250ms
- cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ outline: 2px solid black;
+  background: var(--secondary-text-color);
+  border-radius: 2px;
+ margin-right: 8px;
+ width: 16px;
+ height: 15px;
 }
 
   
  .just{
   margin-top: 30px;
-  margin-bottom: 42px;
-  background: var(--last-color);
+  background: var(--secondary-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-  width: 200px;
-  height: 50px;
+  padding: 10px 52px;
+  cursor: pointer;
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.just:hover{
+  background-color: var(--last-color)
+}
+
+.svg-special{
+ margin-left: 10px;
+}
+
+.input-hiddden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
