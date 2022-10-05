@@ -478,7 +478,7 @@
 <p class="footer-invite">Підпишіться на розсилку</p>
 
 <form action="" class="modal-teleg">
-<input type="mail" placeholder="E-mail" id="ivite">
+<input type="email" placeholder="E-mail" id="ivite">
 <button type="submit" class="header-btn special-btn"> Підписатися 
     
     <svg
@@ -519,55 +519,55 @@
 <div class="form-element"> 
         <label for="name" class="label">Ім'я</label> 
     
-    
         <div class="div-inf">
-            <svg  
-            width="12" height="12px">
-            <use xlink:href="./img/sprite-inf.svg#icon-name"></use>
-            </svg>  
+            <input type="text" id="name" minlength="3" maxlength="20"  class="input-inf"> 
+            <svg  width="12" height="12px"><use xlink:href="./img/sprite-inf.svg#icon-name"></use></svg>  
     </div>  
-        <input 
-        type="text" 
-        id="name" minlength="3" 
-        maxlength="20" 
-        class="input-inf"
-        > 
+       
+    
 </div>
 
 <div class="form-element"> 
     <label for="tel" class="label">Телефон</label> 
     
     <div class="div-inf">
-        <svg  
-        width="13" height="13">
-        <use xlink:href="./img/sprite-inf.svg#icon-tel"></use>
-        </svg>  
-    </div>  
-
-    <input 
+   
+        <input 
     type="tel"
     id="tel"
     pattern="[\+]\d{2}\s[\(]\d{3}[\]\s\d{3}[-\]\d{2}[\-]\d{2}" 
     placeholder="+380-85-284-63-07"
     class="input-inf"
     >
+
+    
+        <svg  
+        width="13" height="13">
+        <use xlink:href="./img/sprite-inf.svg#icon-tel"></use>
+        </svg>
+    
+    </div>  
+
+    
 </div>
 
 <div class="form-element"> 
     <label for="mail" class="label">Ім'я</label> 
 
     <div class="div-inf">
+
+        <input 
+        type="email" 
+        id="mail" 
+        class="input-inf"
+         >
+
         <svg  
         width="15" height="12px">
         <use xlink:href="./img/sprite-inf.svg#icon-mail"></use>
         </svg>  
     </div>  
 
-    <input 
-    type="email" 
-    id="mail" 
-    class="input-inf"
-     >
 
     </div>
 
